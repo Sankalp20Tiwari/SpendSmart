@@ -21,14 +21,15 @@ export default function RootLayout({ children }) {
     >
     <html lang="en">
       <body
-        className={`${inter.className}`}
+        className={`${inter.className} bg-black`}
       >
         <Header />
         <main className="min-h-screen">
         {children}
         </main>
-        <footer className="bg-blue-50 py-12">
-          <div className="container mx-auto text-center text-gray-600">
+        <footer className="bg-black/80 backdrop-blur-md py-12">
+          <hr  className="border-gray-800 pb-6"/>
+          <div className="container mx-auto text-center text-xl  text-gray-600">
             All rights reserved@2025
           </div>
         </footer>
