@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import Link from 'next/link'
 import React from 'react'
 import {
@@ -13,7 +13,19 @@ import { checkUser } from '@/lib/checkUser'
 
 const Header = async () => {
 
-  await checkUser();
+  //await checkUser()
+
+  // const [user, setUser] = useState(null)
+
+  // useEffect(() => {
+  //   const fetchUserData = async () => {
+  //     const userData = await checkUser()
+  //     setUser(userData) // Set the user data once retrieved
+  //   }
+
+  //   fetchUserData() // Call the function when the component mounts
+  // }, [])
+
   return (
     <div className='fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800'>
       <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
