@@ -1,10 +1,10 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import {
     Drawer,
     DrawerClose,
     DrawerContent,
     DrawerDescription,
-    DrawerFooter,
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
@@ -24,7 +24,6 @@ import {
 import { Switch } from './ui/switch'
 import useFetch from '@/hooks/useFetch'
 import { createAccount } from '@/actions/dashboard'
-import { BarLoader } from 'react-spinners'
 import { Loader2 } from 'lucide-react'
 import { toast } from 'sonner'
 
@@ -32,7 +31,7 @@ const CreateAccountDrawer = ({children}) => {
   
   const [open,setOpen] = useState(false)
 
-  const {register,control,formState:{errors},handleSubmit,setValue,watch,reset} = useForm({
+  const {register,formState:{errors},handleSubmit,setValue,watch,reset} = useForm({
     resolver: zodResolver(accountSchema),
     defaultValues:{
         name:"",
@@ -50,12 +49,12 @@ const CreateAccountDrawer = ({children}) => {
     } = useFetch(createAccount)
 
     useEffect(()=>{
-        if(newAccount && !createAccountLoading){
+        if(newAccount ){
             toast.success("Account created successfully")
             reset()
             setOpen(false)
         } 
-    },[createAccountLoading,newAccount])
+    },[reset,newAccount])
 
     useEffect(()=>{
         if(error){
@@ -69,7 +68,7 @@ const CreateAccountDrawer = ({children}) => {
   
     return (
     
-      <Drawer open={open} onOpenChange={setOpen}>
+      <Drawer open={open} onOpenChange={setOpen} className="bg-black text-white ">
         <DrawerTrigger asChild >{children}</DrawerTrigger>
         <DrawerContent>
             <DrawerHeader>
