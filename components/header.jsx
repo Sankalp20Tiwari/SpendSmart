@@ -9,8 +9,11 @@ import {
 } from '@clerk/nextjs'
 import { Button } from './ui/button'
 import { LayoutDashboard, PenBox } from 'lucide-react'
+import { checkUser } from '@/lib/checkUser'
 
-const Header = () => {
+const Header = async () => {
+
+  await checkUser();
   return (
     <div className='fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800'>
       <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
