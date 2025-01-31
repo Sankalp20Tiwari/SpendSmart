@@ -4,7 +4,8 @@ import React, { Suspense } from 'react'
 import TransactionTable from '../_components/transaction-table'
 import { BarLoader } from 'react-spinners'
 
-const AccountsPage = async ({params}) => {
+export default async function AccountPage({params})  {
+
 
     const accountData = await getAccountWithTransactions(params.id)
     //console.log(accountData)
@@ -40,4 +41,3 @@ const AccountsPage = async ({params}) => {
   )
 }
 
-export default AccountsPage
