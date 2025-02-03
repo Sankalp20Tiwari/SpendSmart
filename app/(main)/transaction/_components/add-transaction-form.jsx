@@ -27,6 +27,7 @@ import { CalendarIcon } from 'lucide-react'
 import { Switch } from '@/components/ui/switch'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
+import ReceiptScanner from './receipt-scanner'
 
 const AddTransactionForm = ({accounts,categories}) => {
 
@@ -80,10 +81,32 @@ const AddTransactionForm = ({accounts,categories}) => {
         }
     },[transactionResult,transactionLoading])
 
+    const handleScanComplete = (scannedData) => {
+        console.log(scannedData)
+        if (scannedData) {
+          setValue("amount", scannedData.amount.toString());
+          setValue("date", new Date(scannedData.date));
+          if (scannedData.description) {
+            setValue("description", scannedData.description);
+          }
+          const categoryExists = filteredCategories.some(
+            (category) => category.id === scannedData.category
+        );
 
+        if (categoryExists) {
+            setValue("category", scannedData.category);
+        } else {
+            // If the category from receipt isn't valid, fallback to a default category (e.g., "other-expense")
+            setValue("category", "other-expense");
+        }
+          toast.success("Receipt scanned successfully");
+        }
+        console.log(getValues('category')); 
+      };
   return (
     <form className='text-white space-y-2' onSubmit={handleSubmit(onSubmit)}>
        {/* ai receipt scanner */}
+       <ReceiptScanner onScanComplete={handleScanComplete}/>
         <div className='space-y-2'>
             <label className='text-sm font-medium'>Type</label>
             <Select 
