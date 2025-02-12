@@ -20,7 +20,7 @@ import {
     TooltipTrigger,
   } from "@/components/ui/tooltip"
 import { Badge } from '@/components/ui/badge'
-import { ChevronDown, ChevronUp, Clock, Cross, MoreHorizontalIcon, RefreshCcw, RefreshCw, Search, Trash, X } from 'lucide-react'
+import { ChevronDown, ChevronUp, Clock, Cross, MoreHorizontalIcon,  RefreshCw, Search, Trash, X } from 'lucide-react'
 import {
     DropdownMenu,
     DropdownMenuContent,

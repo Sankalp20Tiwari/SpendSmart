@@ -16,7 +16,7 @@ async function DashboardPage() {
     const accounts = await getUserAccounts()
     //console.log(accounts)
 
-    const defaultAccount = accounts.find((account) => account.isDefault)
+    const defaultAccount = accounts?.find((account) => account.isDefault)
 
     let budgetData= null
 

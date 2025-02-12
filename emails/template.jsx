@@ -1,4 +1,4 @@
-import { Body, Button, Container, Head, Heading, Html, Preview, Section, Text } from "@react-email/components";
+import { Body,  Container, Head, Heading, Html, Preview, Section, Text } from "@react-email/components";
 import * as React from "react";
 
 // Dummy data for preview
