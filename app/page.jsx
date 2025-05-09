@@ -1,14 +1,14 @@
 'use client'
 
 import React from 'react';
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import HowItWorks from "@/components/HowItWorks";
-import Stats from "@/components/Stats";
-import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
-import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
+import Hero from "@/app/components/Hero";
+import Features from "@/app/components/Features";
+import HowItWorks from "@/app/components/HowItWorks";
+import Stats from "@/app/components/Stats";
+import Testimonials from "@/app/components/Testimonials";
+import Pricing from "@/app/components/Pricing";
+import FAQ from "@/app/components/FAQ";
+import CTA from "@/app/components/CTA";
 
 
 

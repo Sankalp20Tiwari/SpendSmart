@@ -8,7 +8,7 @@ import {
   SignedOut, 
   UserButton 
 } from '@clerk/nextjs';
-import { Button } from './ui/button';
+import { Button } from '../../components/ui/button';
 import { LayoutDashboard, PenBox } from 'lucide-react';
 
 const Header = () => {
