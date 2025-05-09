@@ -65,6 +65,24 @@ export const testimonialsData = [
     role: "Marketing Manager",
     quote: "I've tried many finance apps, but SpendSmart is by far the most intuitive and comprehensive. I've saved over $3,000 since I started using it!",
     image: "https://randomuser.me/api/portraits/women/68.jpg"
+  },
+  {
+    name: "David Kim",
+    role: "Freelance Designer",
+    quote: "Managing irregular income used to be stressful. With SpendSmart, I can easily plan ahead and smooth out my cash flow. Love it!",
+    image: "https://randomuser.me/api/portraits/men/28.jpg"
+  },
+  {
+    name: "Jessica Lee",
+    role: "Graduate Student",
+    quote: "Tracking my student budget has never been easier. The spending insights help me avoid overspending each semester.",
+    image: "https://randomuser.me/api/portraits/women/77.jpg"
+  },
+  {
+    name: "Mark Davis",
+    role: "Retired Engineer",
+    quote: "I wish I had SpendSmart earlier in life. It’s helped me monitor retirement expenses and plan trips without worry.",
+    image: "https://randomuser.me/api/portraits/men/52.jpg"
   }
 ];
 
