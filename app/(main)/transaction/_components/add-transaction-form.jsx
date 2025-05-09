@@ -286,7 +286,7 @@ const AddTransactionForm = ({accounts,categories, editMode = false, initialData}
                 </div>                
             )}
 
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between pt-4'>
                 <Button variant='ghost' type='button'
                         className='w-full' onClick={()=> router.back()}
                 >
