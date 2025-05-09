@@ -26,7 +26,7 @@ const FAQ = () => {
           {faqData.map((item, index) => (
             <div 
               key={index} 
-              className="mb-4 border border-white/10 rounded-lg overflow-hidden bg-secondary/30"
+              className="mb-4 border border-cyan-400/70 rounded-lg overflow-hidden bg-secondary/20"
             >
               <button 
                 className="w-full p-5 text-left flex justify-between items-center hover:bg-white/5 transition-colors"
@@ -48,7 +48,7 @@ const FAQ = () => {
               </button>
               
               {openItem === index && (
-                <div className="p-5 pt-0 border-t border-white/10 animate-slide-up">
+                <div className="p-2  border-t border-white/10 animate-slide-up">
                   <p className="text-white/70">{item.answer}</p>
                 </div>
               )}

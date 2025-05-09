@@ -63,7 +63,7 @@ const Header = () => {
 
           <SignedOut>
             <SignInButton forceRedirectUrl="/dashboard">
-              <Button className="text-white bg-gradient-to-r from-cyan-600 to-cyan-400 mx-5">
+              <Button className="text-white bg-gradient-to-r from-cyan-600 to-cyan-400 mx-2">
                 Login
               </Button>
             </SignInButton>
