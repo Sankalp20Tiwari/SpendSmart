@@ -65,7 +65,7 @@
   }
   
   .stat-card {
-    @apply bg-primary/20 rounded-xl p-6 border border-white/10 backdrop-blur-sm shadow-teal-cyan shadow-teal-cyan-hover;
+    @apply bg-cyan-400/70 rounded-xl p-6 border border-white/10 backdrop-blur-sm shadow-teal-cyan shadow-teal-cyan-hover;
   }
   
   .hero-card {
