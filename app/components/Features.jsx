@@ -10,7 +10,6 @@ import { enhancedFeaturesData } from '@/data/landing';
 
 
 
-
 const Features = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
   const [headerRef, headerInView] = useInView({
@@ -30,14 +29,15 @@ const Features = () => {
   };
 
   return (
+
     <section className="py-24 relative overflow-hidden bg-black" id='features'>
       {/* Background elements */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-teal-500/20 via-teal-500/40 to-teal-500/20"></div>
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-500/20 to-transparent"></div>
-      
+
       {/* Decorative blurs */}
       {/* <motion.div 
-        className="absolute -top-40 -left-40 w-96 h-96 bg-teal-500/5 rounded-full filter blur-3xl"
+        className="absolute -top-40 -left-40 w-96 h-96 bg-purple-500/5 rounded-full filter blur-3xl"
         animate={{ 
           scale: [1, 1.2, 1], 
           opacity: [0.3, 0.5, 0.3] 
@@ -48,7 +48,7 @@ const Features = () => {
           ease: "easeInOut" 
         }}
       ></motion.div>
-      
+
       <motion.div 
         className="absolute top-1/2 right-0 w-80 h-80 bg-purple-500/5 rounded-full filter blur-3xl"
         animate={{ 
@@ -62,7 +62,7 @@ const Features = () => {
           ease: "easeInOut" 
         }}
       ></motion.div>
-      
+
       <motion.div 
         className="absolute bottom-0 left-1/3 w-72 h-72 bg-blue-500/5 rounded-full filter blur-3xl"
         animate={{ 
@@ -90,17 +90,17 @@ const Features = () => {
             <div className="h-2 w-2 rounded-full bg-cyan-500 mr-2"></div>
             <span className="text-sm font-medium text-teal-400">Premium Features</span>
           </div>
-          
+
           <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center">
             Empower Your <span className="relative">
               <span className="relative z-10 gradient-title">Financial Journey</span>
             </span>
           </h2>
-          
+
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
             SpendSmart combines powerful tools and intuitive interfaces to give you complete control over your financial journey.
           </p>
-          
+
           <motion.div 
             className="mt-10 flex justify-center space-x-2 "
             initial={{ opacity: 0, y: 20 }}
@@ -112,7 +112,7 @@ const Features = () => {
             <div className="h-1 w-2 rounded-full bg-cyan-500/30"></div>
           </motion.div>
         </motion.div>
-        
+
         {/* Bento grid with proper layout - explicitly defining the grid for each screen size */}
         <motion.div 
           className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(150px,auto)] md:auto-rows-[minmax(200px,auto)] gap-4 md:gap-6"
@@ -124,7 +124,7 @@ const Features = () => {
           {enhancedFeaturesData.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}
-          
+
         </motion.div>
 
         {/* Call to action */}
