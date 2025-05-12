@@ -69,6 +69,7 @@ const Testimonials = () => {
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="w-8 h-8 rounded-full border-2 border-teal"
+                      unoptimized
                     />
                     <div className="ml-2">
                       <h4 className="text-white text-sm font-semibold">{testimonial.name}</h4>
