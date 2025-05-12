@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { testimonialsData } from '@/data/landing';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ShiningStar = ({ index }) => (
   <motion.svg
@@ -62,7 +63,9 @@ const Testimonials = () => {
               <Card className=" bg-teal/10 border border-cyan-700 shadow-lg rounded-xl h-[160px]">
                 <CardContent className="p-3">
                   <div className="flex items-center mb-3">
-                    <img
+                    <Image
+                      width={32}
+                      height={32}
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="w-8 h-8 rounded-full border-2 border-teal"
