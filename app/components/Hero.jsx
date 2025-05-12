@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -46,8 +47,10 @@ const Hero = () => {
           </div>
           <div className="relative">
             <div className="hero-card p-4 max-w-lg mx-auto lg:ml-auto animate-float">
-              <img 
-                src="https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=600" 
+              <Image 
+                width={600} 
+                height={400}
+                src="/heroBanner.jpeg" 
                 alt="SpendSmart Dashboard" 
                 className="rounded-lg shadow-lg w-full"
               />
