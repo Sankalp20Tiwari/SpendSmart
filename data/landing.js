@@ -2,7 +2,14 @@
 import { 
   Wallet, 
   DollarSign,
+  PieChart, 
+  CreditCard, 
   TrendingUp, 
+  Bell, 
+  Shield, 
+  Smartphone,
+  Sparkles,
+  Zap,
 } from "lucide-react";
 
 
@@ -154,5 +161,102 @@ export const faqData = [
   {
     question: "Is there a mobile app available?",
     answer: "Yes, SpendSmart is available as a mobile app for both iOS and Android devices, as well as a web application accessible from any browser."
+  }
+];
+
+export const enhancedFeaturesData = [
+  {
+    title: "Budget Tracking",
+    description: "Set custom budgets and track spending in real-time with visual reports.",
+    icon: PieChart,
+    color: "from-teal-400 to-emerald-600",
+    textColor: "text-emerald-400",
+    borderColor: "border-emerald-500/20",
+    size: "col-span-1 row-span-1 md:col-span-1 md:row-span-1",
+    variant: "gradient",
+    hoverEffect: "scale"
+  },
+      {
+    title: "Smart Alerts",
+    description: "Get timely notifications about unusual spending, upcoming bills, and opportunities to save.",
+    icon: Bell,
+    color: "from-orange-400 to-amber-500",
+    textColor: "text-amber-400",
+    borderColor: "border-amber-500/20",
+    size: "col-span-1 md:col-span-1 md:row-span-1",
+    variant: "icon-left",
+    hoverEffect: "glow"
+  },
+  {
+    title: "Secure Transactions",
+    description: "Bank-level encryption ensures your financial data stays private and protected.",
+    icon: Shield,
+    color: "from-indigo-500 to-blue-600",
+    textColor: "text-blue-400",
+    borderColor: "border-blue-500/20",
+    size: "col-span-2 md:col-span-2 md:row-span-1",
+    image: "/secureTransactions.jpg",
+    variant: "image-dominant",
+    hoverEffect: "glow"
+  },
+  {
+    title: "Investment Tracking",
+    description: "Monitor investments, analyze performance, and receive personalized recommendations.",
+    icon: TrendingUp,
+    color: "from-neutral-200/30 via-zinc-400/30 to-transparent",
+    textColor: "text-green-400",
+    borderColor: "border-green-500/20",
+    size: "col-span-2 md:col-span-1 md:row-span-2",
+    image: "/investmentTracking.jpg",
+    variant: "vertical",
+    hoverEffect: "slide"
+  },
+  {
+    title: "Mobile Access",
+    description: "Manage your finances anytime, anywhere with our fully-featured mobile app.",
+    icon: Smartphone,
+    color: "from-pink-500 to-rose-600",
+    textColor: "text-pink-400",
+    borderColor: "border-pink-500/20",
+    size: "col-span-2 md:col-span-1 md:row-span-1",
+    image: "/mobileAccess.jpg",
+    variant: "image-dominant",
+    hoverEffect: "zoom"
+  },
+    {
+    title: "AI Insights",
+    description: "Get personalized financial advice powered by advanced AI algorithms.",
+    icon: Sparkles,
+    color: "from-cyan-400 to-blue-600",
+    textColor: "text-cyan-400",
+    borderColor: "border-cyan-500/20",
+    size: "col-span-2 md:col-span-1 md:row-span-1",
+    image: "https://images.unsplash.com/photo-1633158829799-56bdf8e56dbd?ixlib=rb-4.0.3",
+    variant: "minimal",
+    hoverEffect: "pulse"
+  },
+  {
+    title: "Payment Management",
+    description: "Schedule payments and never miss a due date with automated reminders.",
+    icon: CreditCard,
+    color: "from-purple-500 to-violet-600",
+    textColor: "text-purple-400",
+    borderColor: "border-purple-500/20",
+    size: "col-span-1 md:col-span-1 md:row-span-2",
+    image: "/paymentManagement.jpg",
+    variant: "icon-prominent",
+    hoverEffect: "slide"
+  },
+  
+  {
+    title: "Lightning Fast",
+    description: "Experience blazing fast performance with our optimized platform.",
+    icon: Zap,
+    color: "from-amber-400 to-orange-600",
+    textColor: "text-amber-400",
+    borderColor: "border-amber-500/20",
+    size: "col-span-1 md:col-span-2 md:row-span-1",
+    variant: "gradient-text",
+    hoverEffect: "bounce"
   }
 ];
