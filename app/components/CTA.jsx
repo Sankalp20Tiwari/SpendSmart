@@ -1,11 +1,19 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const CTA = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-cta-gradient opacity-50 z-0"></div>
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2400&q=80')] bg-cover bg-center opacity-10 z-0"></div>
+      <div className="absolute inset-0 z-0 opacity-10">
+        <Image
+          src="/ctaBg.jpeg"
+          alt="Cta Image" 
+          fill
+          className="object-cover object-center"
+        />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="hero-card max-w-4xl mx-auto p-12">
