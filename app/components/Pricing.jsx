@@ -22,7 +22,7 @@ const Pricing = () => {
               key={index} 
               className={`rounded-xl   ${
                 tier.highlighted 
-                  ? 'border-teal border-2 relative shadow-2xl shadow-teal/20 shadow-teal-cyan bg-gradient-to-br from-cyan-600/50 to-teal/50 h-100 scale-110' 
+                  ? 'border-teal border-2 relative shadow-2xl shadow-teal/20 shadow-teal-cyan bg-gradient-to-br from-cyan-600/50 to-teal/50 h-100 sm:scale-110' 
                   : 'border-white/10 bg-navy border-light-teal border '
               }`}
             >

@@ -2,118 +2,13 @@ import { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
-  PieChart, 
-  CreditCard, 
-  TrendingUp, 
-  Bell, 
-  Shield, 
-  Smartphone,
-  Sparkles,
-  Zap,
   ChevronRight
 } from 'lucide-react';
 import FeatureCard from './FeatureCard';
+import { enhancedFeaturesData } from '@/data/landing';
 
-// Enhanced feature data with real images instead of placeholders
-const enhancedFeaturesData = [
-  {
-    title: "Budget Tracking",
-    description: "Set custom budgets and track spending in real-time with visual reports.",
-    icon: PieChart,
-    color: "from-teal-400 to-emerald-600",
-    textColor: "text-emerald-400",
-    borderColor: "border-emerald-500/20",
-    size: "col-span-1 row-span-1 md:col-span-1 md:row-span-1",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3",
-    variant: "gradient",
-    hoverEffect: "scale"
-  },
-  {
-    title: "Smart Alerts",
-    description: "Get timely notifications about unusual spending, upcoming bills, and opportunities to save.",
-    icon: Bell,
-    color: "from-orange-400 to-amber-500",
-    textColor: "text-amber-400",
-    borderColor: "border-amber-500/20",
-    size: "col-span-1 md:col-span-1 md:row-span-1",
-    image: "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-4.0.3",
-    variant: "icon-left",
-    hoverEffect: "glow"
-  },
-  {
-    title: "Secure Transactions",
-    description: "Bank-level encryption ensures your financial data stays private and protected.",
-    icon: Shield,
-    color: "from-indigo-500 to-blue-600",
-    textColor: "text-blue-400",
-    borderColor: "border-blue-500/20",
-    size: "col-span-2 md:col-span-2 md:row-span-1",
-    image: "https://static.vecteezy.com/system/resources/thumbnails/025/015/707/small_2x/digital-card-with-padlock-icon-made-of-moving-blue-glowing-particles-on-technological-sky-blue-dots-background-concept-of-payment-secure-safety-cyber-security-and-protection-video.jpg",
-    variant: "image-dominant",
-    video: "https://assets.mixkit.co/videos/preview/mixkit-typing-on-smartphone-in-the-dark-with-charts-on-screen-12726-large.mp4",
-    hoverEffect: "glow"
-  },
-  {
-    title: "Investment Tracking",
-    description: "Monitor investments, analyze performance, and receive personalized recommendations.",
-    icon: TrendingUp,
-    color: "from-neutral-200/30 via-zinc-400/30 to-transparent",
-    textColor: "text-green-400",
-    borderColor: "border-green-500/20",
-    size: "col-span-2 md:col-span-1 md:row-span-2",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3",
-    variant: "vertical",
-    hoverEffect: "slide"
-  },
-  {
-    title: "AI Insights",
-    description: "Get personalized financial advice powered by advanced AI algorithms.",
-    icon: Sparkles,
-    color: "from-cyan-400 to-blue-600",
-    textColor: "text-cyan-400",
-    borderColor: "border-cyan-500/20",
-    size: "col-span-2 md:col-span-1 md:row-span-1",
-    image: "https://images.unsplash.com/photo-1633158829799-56bdf8e56dbd?ixlib=rb-4.0.3",
-    variant: "minimal",
-    hoverEffect: "pulse"
-  },
-  {
-    title: "Mobile Access",
-    description: "Manage your finances anytime, anywhere with our fully-featured mobile app.",
-    icon: Smartphone,
-    color: "from-pink-500 to-rose-600",
-    textColor: "text-pink-400",
-    borderColor: "border-pink-500/20",
-    size: "col-span-2 md:col-span-1 md:row-span-1",
-    image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3",
-    variant: "image-dominant",
-    hoverEffect: "zoom"
-  },
-  {
-    title: "Payment Management",
-    description: "Schedule payments and never miss a due date with automated reminders.",
-    icon: CreditCard,
-    color: "from-purple-500 to-violet-600",
-    textColor: "text-purple-400",
-    borderColor: "border-purple-500/20",
-    size: "col-span-1 md:col-span-1 md:row-span-2",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3",
-    variant: "icon-prominent",
-    hoverEffect: "slide"
-  },
-  
-  {
-    title: "Lightning Fast",
-    description: "Experience blazing fast performance with our optimized platform.",
-    icon: Zap,
-    color: "from-amber-400 to-orange-600",
-    textColor: "text-amber-400",
-    borderColor: "border-amber-500/20",
-    size: "col-span-1 md:col-span-2 md:row-span-1",
-    variant: "gradient-text",
-    hoverEffect: "bounce"
-  }
-];
+
+
 
 
 const Features = () => {
@@ -141,7 +36,7 @@ const Features = () => {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-500/20 to-transparent"></div>
       
       {/* Decorative blurs */}
-      <motion.div 
+      {/* <motion.div 
         className="absolute -top-40 -left-40 w-96 h-96 bg-teal-500/5 rounded-full filter blur-3xl"
         animate={{ 
           scale: [1, 1.2, 1], 
@@ -180,7 +75,7 @@ const Features = () => {
           repeat: Infinity,
           ease: "easeInOut" 
         }}
-      ></motion.div>
+      ></motion.div> */}
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Animated header */}
