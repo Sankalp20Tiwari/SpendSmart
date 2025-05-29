@@ -6,7 +6,7 @@ SpendSmart is a modern finance management web application designed to help users
 
 ## 🖼️ Preview
 
-![SpendSmart Landing Page](public/landing-page.png)
+![SpendSmart Landing Page](public/landingPage.png)
 
 ## 🚀 Features
 
