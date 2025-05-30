@@ -57,10 +57,10 @@ const Testimonials = () => {
           {testimonialsData.map((testimonial, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               className="w-full"
             >
-              <Card className=" bg-teal/10 border border-cyan-700 shadow-lg rounded-xl h-[160px]">
+              <Card className=" bg-teal/10 border-none shadow-lg  h-[160px]">
                 <CardContent className="p-3">
                   <div className="flex items-center mb-3">
                     <Image
